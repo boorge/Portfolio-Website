@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta Content-Type: text/html; charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Font links -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- CSS links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- fancybox -->
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css'>
+    <!-- magnific-popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            color: #fff;
+            background-color: #000000;
+            z-index: 0;
+        }
+
+        p {
+            color: #fff;
+        }
+
+/* -----------------------------------
+      Gallery Section
+--------------------------------------*/
+
+        .portfolio-section {
+            padding: 50px 0;
+            background-color: #000;
+        }
+
+        .portfolio-section h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: rgb(85, 83, 83);
+        }
+        .portfolio-section h2 span{
+            color:#ffffff;
+        }
+
+        .portfolio-menu{
+            text-align: center;
+        }
+        .portfolio-menu nav{
+            display: flex;
+            justify-content: center;
+        }
+        .portfolio-menu nav li{
+            list-style: none;
+            padding: 11px 25px;
+            border: 1px solid rgb(8, 8, 8);
+            border-radius: 50px;
+            margin: 15px;
+            transition: .5s;
+            cursor: pointer;
+        }
+        .portfolio-menu nav li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .portfolio-menu nav li:hover{
+            color: #fff;
+            background-color: #c55151;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="portfolio-section" id="portfolio">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>My <span>Skills</span> and Project <span>Gallery</span> <span style="color: #c55151;">:)</span> </h2>
+                </div>
+            </div>
+            <div class="portfolio-menu mt-2 mb-4">
+                <nav class="controls">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="graphics.html">Graphics</a></li>
+                </nav>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- JS Links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- Mixitup -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js'></script>
+    <!-- fancybox -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js'></script>
+    <!-- Fancybox js -->
+    <script>
+        /*Downloaded from https://www.codeseek.co/ezra_siton/mixitup-fancybox3-JydYqm */
+        // 1. querySelector
+        var containerEl = document.querySelector(".portfolio-item");
+        // 2. Passing the configuration object inline
+        //https://www.kunkalabs.com/mixitup/docs/configuration-object/
+        var mixer = mixitup(containerEl, {
+            animation: {
+                effects: "fade translateZ(-100px)",
+                effectsIn: "fade translateY(-100%)",
+                easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+            }
+        });
+        // fancybox insilaze & options //
+        $("[data-fancybox]").fancybox({
+            loop: true,
+            hash: true,
+            transitionEffect: "slide",
+            /* zoom VS next////////////////////
+            clickContent - i modify the deafult - now when you click on the image you go to the next image - i more like this approach than zoom on desktop (This idea was in the classic/first lightbox) */
+            clickContent: function (current, event) {
+                return current.type === "image" ? "next" : false;
+            }
+        });
+    </script>
+</body>
+
+</html>

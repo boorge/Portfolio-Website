@@ -1,0 +1,259 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Work</title>
+    <!--  ION ICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        :root {
+            /*  FONTS  */
+            --font-family: sans-serif;
+            --font-reset: 62.5%;
+            --font-size: 1.6rem;
+            --line-height: base-line;
+            /*  WIDTH  */
+            --container-width: 1366px;
+            /*  COLOR  */
+            --light: #ffffff;
+        }
+
+        html {
+            font-size: var(--font-reset);
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size);
+            line-height: var(--line-height);
+            background-color: #111;
+        }
+
+        #header,
+        #main,
+        #footer {
+            margin: 7.5rem 0rem 1.5rem;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--container-width);
+            margin: -3% auto;
+            padding: 0rem 1rem;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        /* FRONT PAGE */
+        #title {
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0rem;
+        }
+
+        #title span {
+            color: #c55151;
+        }
+
+        .contain-images {
+            grid-template-columns: repeat(auto-fill, minmax(42rem, 1fr));
+            gap: 3rem
+        }
+
+        .figure {
+            width: 100%;
+            position: relative;
+            box-shadow: 0rem 0.6rem 2rem rgba(0, 0, 0, 0.5);
+        }
+
+        .figcap {
+            width: 100%;
+            padding: 1rem 0rem;
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: var(--light);
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+        }
+
+        #signature {
+            color: rgb(99, 96, 96);
+            padding: 1rem 0rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        #signature span {
+            color: #fff;
+        }
+
+        .portfolio-section {
+            margin-top: -4%;
+            padding: 50px 0;
+            background-color: #111;
+        }
+
+        .portfolio-section h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: rgb(85, 83, 83);
+        }
+
+        .portfolio-section h2 span {
+            color: #ffffff;
+        }
+
+        .portfolio-menu {
+            text-align: center;
+        }
+
+        .portfolio-menu nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .portfolio-menu nav li {
+            list-style: none;
+            padding: 11px 25px;
+            border: 1px solid rgb(122, 120, 120);
+            border-radius: 50px;
+            margin: 15px;
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        .portfolio-menu nav li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .portfolio-menu nav li:hover {
+            color: #fff;
+            background-color: #c55151;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" role="header">
+        <div class="container">
+            <h1 id="title">My <span>Graphics </span> Work</h1>
+        </div>
+    </header>
+
+    <section class="portfolio-section" id="portfolio">
+        <div class="container-fluid">
+            <div class="portfolio-menu mt-2 mb-4">
+                <nav class="controls">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="graphics.html">Graphics</a></li>
+                </nav>
+            </div>
+
+        </div>
+    </section>
+
+    <main id="main" role="main">
+        <div class="container">
+            <article class="contain-images grid">
+                <figure id="figure1" class="figure">
+                    <img src="https://document-export.canva.com/xmBPE/DAFJIDxmBPE/80/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220815%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220815T193955Z&X-Amz-Expires=67922&X-Amz-Signature=6de7322946a8f18f2d2c80b55471ab0bc73c597bddacb77c24561de655d9a2c1&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2016%20Aug%202022%2014%3A31%3A57%20GMT"
+                        alt="Image" class="img" id="img1">
+                    <figcaption id="figcap1" class="figcap">Independence Day</figcaption>
+                </figure>
+
+                <figure id="figure2" class="figure">
+                    <img src="https://document-export.canva.com/Ous-4/DAFJGEOus-4/30/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220815%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220815T144248Z&X-Amz-Expires=87326&X-Amz-Signature=aab555f9a7e6ee8ec1be4e402a8de5262b674d3d2cbf6d3f5254d68403bd9d18&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2016%20Aug%202022%2014%3A58%3A14%20GMT"
+                        alt="Image" class="img" id="img2">
+                    <figcaption id="figcap2" class="figcap">Rakhshabandhan with Rakhshak</figcaption>
+                </figure>
+
+                <figure id="figure3" class="figure">
+                    <img src="https://document-export.canva.com/36Q5k/DAFH0e36Q5k/165/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220816%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220816T113147Z&X-Amz-Expires=12159&X-Amz-Signature=e040a2e3189346922be37136305aac0f322f4417c255bf7e7ab4fe087ece8339&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2016%20Aug%202022%2014%3A54%3A26%20GMT"
+                        alt="Image" class="img" id="img3">
+                    <figcaption id="figcap3" class="figcap">Workshop</figcaption>
+                </figure>
+
+                <figure id="figure4" class="figure">
+                    <img src="https://document-export.canva.com/TR0TA/DAFE_3TR0TA/84/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220816%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220816T063250Z&X-Amz-Expires=28808&X-Amz-Signature=900fa4205ca0d365d9551d4b2914315462d001883af2fb446349d3839612b1b3&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2016%20Aug%202022%2014%3A32%3A58%20GMT"
+                        alt="Image" class="img" id="img4">
+                    <figcaption id="figcap4" class="figcap">World Conservation Day</figcaption>
+                </figure>
+
+                <figure id="figure5" class="figure">
+                    <img src="https://document-export.canva.com/_P0OM/DAE5dq_P0OM/29/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220815%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220815T140240Z&X-Amz-Expires=87953&X-Amz-Signature=c3106761d944aee9d2d95b729c644030698ae3eec5a9d0b326b7a9949a669f8c&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2016%20Aug%202022%2014%3A28%3A33%20GMT"
+                        alt="Image" class="img" id="img5">
+                    <figcaption id="figcap5" class="figcap">Food Festival Dark </figcaption>
+                </figure>
+
+                <figure id="figure6" class="figure">
+                    <img src="https://document-export.canva.com/mOhmA/DAFF1ymOhmA/89/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220816%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220816T080255Z&X-Amz-Expires=25402&X-Amz-Signature=3369aace663b510b66b11d292108489097f4102f17adecd91f9260bf678b6dc8&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2016%20Aug%202022%2015%3A06%3A17%20GMT"
+                        alt="Image" class="img" id="img6">
+                    <figcaption id="figcap6" class="figcap">Guru Purnima</figcaption>
+                </figure>
+
+                <figure id="figure7" class="figure">
+                    <img src="https://document-export.canva.com/Ud5PU/DAFEh-Ud5PU/124/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220816%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220816T065519Z&X-Amz-Expires=27849&X-Amz-Signature=c6c9925053bedd1b479101121b3ac6db1c0cb0b1b821c9ef19bbbbf4c1d2fd45&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2016%20Aug%202022%2014%3A39%3A28%20GMT"
+                        alt="Image" class="img" id="img7">
+                    <figcaption id="figcap7" class="figcap">E-Waste Collection Drive</figcaption>
+                </figure>
+
+                <figure id="figure8" class="figure">
+                    <img src="https://document-export.canva.com/D03Ko/DAFJMaD03Ko/11/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220815%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220815T225414Z&X-Amz-Expires=55534&X-Amz-Signature=b60e1cf65b4daf57f48d3075d7d3515e5db0d1249c2bedd48c9a3fece710b3d2&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2016%20Aug%202022%2014%3A19%3A48%20GMT"
+                        alt="Image" class="img" id="img8">
+                    <figcaption id="figcap8" class="figcap">Rocketry</figcaption>
+                </figure>
+
+                <figure id="figure9" class="figure">
+                    <img src="https://document-export.canva.com/OnDYs/DAE5dxOnDYs/13/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220815%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220815T235414Z&X-Amz-Expires=54715&X-Amz-Signature=8726b88b564ed069d57822f1d9655e5d088936f16198c0319766aa87a57c3467&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2016%20Aug%202022%2015%3A06%3A09%20GMT"
+                        alt="Image" class="img" id="img9">
+                    <figcaption id="figcap9" class="figcap">Food Festival White</figcaption>
+                </figure>
+            </article>
+        </div>
+    </main>
+
+    <footer id="footer" role="footer">
+        <div class="container">
+            <p id="signature">Created by <span>Kiran Borge</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- CREDIT: https://source.unsplash.com - RANDOOM PHOTOS -->
